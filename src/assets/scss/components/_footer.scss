@@ -1,0 +1,45 @@
+.footer {
+    background-color: #333333 !important;
+    color: white;
+    padding: 2rem 0rem 1.5rem !important;
+    // position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .columns {
+        align-items: center;
+
+
+        .column {
+            text-align: center;
+
+
+            a {
+                color: white !important;
+            }
+
+            p.column-title {
+                color: white;
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            span.footer-disclaimer {
+                font-size: 11px;
+                color: grey;
+                line-height: 19px;
+            }
+
+            ul.social-list {
+                display: inline-flex;
+                gap: 27px;
+
+                li{
+                    font-size: 25px;
+                }
+            }
+        }
+
+    }
+}

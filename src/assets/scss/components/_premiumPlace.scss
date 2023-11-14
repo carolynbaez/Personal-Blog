@@ -1,0 +1,31 @@
+.modal-card.modal-premium-place {
+    width: auto;
+
+    .place-information {
+        font-family: "League Spartan" !important;
+        font-weight: revert;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+
+        h1.place-name {
+            font-size: 35px;
+            color: #82C0C6;
+
+        }
+
+        .complementary-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 101px;
+
+            .start-rating {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.login-body {
+    width: 100%;
+    height: auto;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .forms {
+        width: 70%;
+
+        .login-form {
+            width: 40%;
+
+            input.input {
+                height: 35px;
+
+                &:focus{
+                    border-color: rgb(8, 141, 141);
+                    box-shadow: none;
+                }
+            }
+
+            svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa{
+                width: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+.place-view {
+    width: 98%;
+    padding: 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    text-align: center;
+
+
+    .place-top {
+        display: flex;
+
+        h1.place-name {
+            font-family: 'League Spartan' !important;
+            font-weight: revert;
+            font-size: 35px;
+            color: #82C0C6;
+            display: none;
+
+            .actions {
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                padding-right: 9px;
+                padding-bottom: 5px;
+
+                .button {
+                    color: #FFF;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .place-galery {
+            width: 50%;
+            min-height: 400px;
+            max-height: 400px;
+            flex-direction: row-reverse;
+            display: flex;
+            column-gap: 35px;
+
+            .images {
+                display: flex;
+                width: 18%;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0 auto;
+                row-gap: 22px;
+
+                img {
+                    display: inline-block;
+                    position: relative;
+                    width: 85%;
+                    height: auto;
+                    margin: 0 5px 10px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .main-image {
+            width: 80%;
+            min-height: 400px;
+            max-height: 500px;
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+        .place-information {
+            width: 50%;
+            min-height: 400px;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            h1.place-name {
+                display: flex;
+                flex-direction: row;
+                text-align: justify;
+                justify-content: space-between;
+
+                .actions {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+
+                    button {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+
+                span.place-category {
+                    color: lightgray;
+                }
+            }
+
+            .complementary-info {
+                display: flex;
+                justify-content: space-between;
+
+                span:not(.checked) {
+                    color: lightgray;
+                }
+
+                .checked {
+                    color: orange;
+                }
+
+                .price {
+                    font-family: 'League Spartan' !important;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 20px;
+                    color: #4a4a4a !important;
+                }
+            }
+
+            .short-description {
+                margin-top: -9px;
+                color: #000;
+                text-align: justify;
+                font-family: unset;
+                font-style: normal;
+                font-weight: lighter;
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+        }
+    }
+
+    .place-bottom {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        h2.more-info {
+            font-weight: 600;
+            font-size: revert;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: $color1;
+
+            .border {
+                width: 100%;
+                border-bottom: 1px solid rgb(223, 223, 223);
+                position: absolute;
+                right: -202px;
+            }
+
+        }
+
+        .long-description {
+            min-height: 300px;
+            padding: 20px;
+
+
+            .description {
+                margin-bottom: 30px;
+                color: #000;
+                text-align: justify;
+                font-family: unset;
+                font-style: normal;
+                font-weight: lighter;
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            .actions {
+                display: flex;
+                column-gap: 50px;
+
+                .collapse {
+
+                    div#contentIdForA11y1 {
+                        margin-top: 25px;
+                    }
+
+                    .collapse-trigger {
+
+                        .button.is-info {
+                            background-color: $color2 !important;
+
+                            &:hover {
+                                background-color: $color3 !important;
+                            }
+                        }
+
+                        .button.is-success.is-outlined {
+
+                            &:hover,
+                            &:focus {
+                                border-color: $color3;
+                                background-color: $color3;
+                                color: white;
+                            }
+
+
+
+                            color: $color2;
+                            border-color: $color2;
+                            width: 153.344px;
+                            height: 40px;
+                        }
+                    }
+
+                    .notification {
+                        background-color: white;
+                        border: 1px solid lightgray;
+                        padding: 1.25rem 1.5rem 1.25rem 0.5rem !important;
+
+                        .content {
+                            .info-body {
+                                ul {
+                                    list-style: none;
+                                    align-items: flex-start;
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 35px;
+
+                                    &.contact-list {
+                                        gap: 15px;
+                                        margin: 0;
+
+                                        li {
+                                            font-size: 14px;
+                                            margin-left: 43px;
+                                            margin-top: -4px;
+                                            color: gray;
+                                            font-weight: lighter;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 10px;
+                                        }
+                                    }
+
+                                    li {
+                                        span {
+                                            color: $royal-blue;
+                                        }
+
+                                        p,
+                                        p.name {
+                                            font-size: 26px;
+                                            display: flex;
+                                            align-items: flex-start;
+                                            gap: 8px;
+                                            margin: 0;
+                                            font-weight: 600;
+                                            color: $royal-blue;
+
+                                            &.transportation-info {
+                                                font-size: 14px;
+                                                margin-left: 43px;
+                                                margin-top: -4px;
+                                                color: gray;
+                                                font-weight: lighter;
+                                                text-align: justify;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .place-view {
+        row-gap: 40px;
+
+        .place-top {
+            flex-direction: column;
+            gap: 30px;
+
+            h1.place-name {
+                display: block;
+            }
+
+            .place-galery {
+                margin: 0 auto;
+                width: 496px;
+                flex-direction: column;
+                min-height: 0;
+                max-height: inherit;
+
+                .main-image {
+                    margin: 0 auto;
+                    min-height: auto !important;
+                    max-height: auto;
+                }
+
+                .images {
+                    width: 30%;
+                    flex-direction: row;
+                }
+            }
+
+            .place-information {
+                width: 100%;
+                min-height: auto;
+                margin-bottom: 30px;
+                padding: 0;
+                margin: auto;
+
+                h1.place-name {
+                    display: none;
+                }
+            }
+        }
+
+        .place-bottom {
+            padding: 0;
+            // margin: auto;
+            // width: 90%;
+        }
+    }
+
+}
+
+@media screen and (max-width:580px) {
+
+    .place-view {
+        padding: 40px 10px 40px;
+
+        .place-galery {
+            width: 95% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .place-view .place-bottom .long-description .actions {
+        display: flex;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+input.input:active,
+input.input:focus,
+.select select:active,
+.select.is-fullwidth select:focus {
+    box-shadow: 0 0 0 0.125em #167df073;
+    border-color: aliceblue !important;
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+    border-color: #167df0;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #167df0;
+}
+
+div.v-select__slot>div.v-input__append-inner>div>i {
+    color: #167df0;
+    right: -31px;
+    top: -4px;
+}
+
+.theme--light.v-text-field>.v-input__control>.v-input__slot:before {
+    display: none;
+}
+
+.v-select__slot {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+    padding-right: 2.5em;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    height: 2.5em;
+    line-height: 1.5;
+}
+
+.category-select {
+    padding: 0 !important;
+}

@@ -1,0 +1,52 @@
+.user-list-seccion {
+
+    min-height: 600px;
+    padding-top: 30px;
+
+    .b-table .table {
+        width: 100%;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        border-collapse: separate;
+        margin: 0 auto;
+        min-height: 400px;
+        margin-top: 40px;
+
+        .actions {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            button {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+}
+
+.edit-user-modal .animation-content.modal-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    justify-content: center;
+    max-height: initial !important;
+    overflow-y: auto !important;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #82C0C6;
+}
+
+.button.is-primary{
+    background-color: #167df0 !important;
+}
+
+.pagination-link.is-current {
+    background-color: #167df0 !important;
+    border-color: #167df0 !important;
+    color: #fff;
+}

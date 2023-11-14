@@ -1,0 +1,122 @@
+.plans-modal {
+
+  .animation-content.modal-content {
+    width: 100%;
+    max-width: 100% !important;
+    justify-content: center;
+    max-height: initial !important;
+    overflow-y: auto !important;
+    border-radius: 6px;
+
+    .plans {
+      min-width: 500px;
+
+      .column {
+
+        .card {
+          min-height: 370px;
+          border-radius: 16px;
+          border: 1px solid #EDE4F9;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            text-align: center;
+            color: black;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+
+            span {
+              svg {
+                color: orange;
+                height: 30px;
+                margin-right: 16px;
+              }
+            }
+          }
+
+          h2 {
+            font-size: 2.2rem;
+            line-height: 3;
+            text-size-adjust: none;
+            font-weight: 700;
+            color: #0b545e;
+            text-align: center;
+          }
+
+          .benefits {
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            min-height: 140px;
+            margin-top: -11px;
+
+            .benefit {
+              display: flex;
+              align-items: center;
+              line-height: 2;
+
+              .icon {
+                svg {
+                  height: 18px;
+                  color: #14939c;
+                }
+              }
+            }
+          }
+
+          button {
+            background-color: rgba(0, 0, 0, 0.07);
+            transition: background-color .1s linear, border-color .1s linear, color .1s linear;
+            width: 70%;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            height: 40px;
+            padding: 0 6px;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+
+            span {
+              color: #0e1318;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .plans-modal .animation-content.modal-content {
+
+    width: 80% !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 640px;
+
+    .plans {
+      .modal-card-body {
+        overflow-y: auto;
+        overflow-y: auto;
+
+        .columns {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

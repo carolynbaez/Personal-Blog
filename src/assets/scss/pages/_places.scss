@@ -1,0 +1,216 @@
+.main-content {
+    .header-places {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        row-gap: 10px;
+
+        h1.places-title.title {
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .new-place {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 16px;
+        }
+
+        .selectors {
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 30px;
+
+            .new-place {
+                margin-right: -20px;
+                margin-top: 7px;
+            }
+
+            .category>div>div>span>select {
+                border-color: #e4e4e4;
+
+                &:focus {
+                    border-color: #167df0
+                }
+            }
+
+            .search-place {
+                display: flex;
+                align-items: center;
+                column-gap: 4px;
+
+            }
+        }
+    }
+
+    .container-places {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(auto-fill, 14em);
+        justify-content: space-around;
+    }
+}
+
+.cards-places {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 70px auto;
+
+    .columns {
+        gap: 40px
+    }
+
+    .place-card {
+        width: 180px;
+        height: 250px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: none;
+        padding-top: 15px;
+        text-align: center;
+
+
+
+        img.icon-place {
+            max-width: 28%;
+        }
+
+        p.card-place-text {
+            line-height: 36px;
+            margin-top: 20px;
+            font-weight: normal;
+        }
+    }
+}
+
+.place {
+    width: 222px;
+
+    .card.skeleton {
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 17px;
+
+
+    }
+}
+
+.place,
+.place-card {
+    width: 250px;
+    min-height: 330px;
+    padding: 9px;
+
+
+    &:hover {
+
+        cursor: pointer;
+    }
+
+    .card-image {
+
+        figure {
+            img {
+                height: 252.016px;
+                width: 100%;
+            }
+
+            .b-skeleton.is-large {
+                .b-skeleton-item {
+                    height: 186px;
+                }
+            }
+        }
+
+
+        .actions {
+            position: absolute;
+            top: 41%;
+            left: 31%;
+            gap: 8px;
+            display: none;
+        }
+    }
+
+    .card-body {
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .footer-card {
+            display: flex;
+            justify-content: space-between;
+
+            .see-more {
+                color: $color3;
+
+                &:hover {
+                    color: $color1;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+.control.has-icons-left .icon.is-left {
+    color: $color1;
+    font-size: 9px;
+    top: 8px;
+    left: 9px;
+}
+
+
+.start-rating {
+    span:not(.checked) {
+        color: lightgray;
+    }
+
+    .checked {
+        color: orange;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+
+    .places-container.container:not(.is-max-desktop),
+    .container:not(.is-max-desktop) {
+        max-width: 99% !important;
+    }
+}
+
+h1.title.places-title {
+    padding-left: 26px;
+    font-size: 2.25rem !important;
+}
+
+i.v-icon.notranslate.fa.fa-database.theme--light.grey--text.text--darken-2 {
+    font-size: 110px !important;
+    color: #b9b9b9 !important
+}
+
+.no-results {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+    row-gap: 40px;
+    font-size: 26px;
+    font-family: inherit;
+}

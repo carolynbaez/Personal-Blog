@@ -1,0 +1,94 @@
+.container.plans {
+    min-height: 500px;
+
+    .title {
+        text-align: center;
+    }
+
+    .payment-box {
+        width: 50%;
+        min-height: 300px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+
+        img {
+            width: 160px;
+        }
+
+        form {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+
+            input {
+                width: 100%;
+                margin: 0 auto;
+                border-color: #167df0;
+                max-width: 100%;
+                background-color: white;
+                border-radius: 4px;
+                color: #363636;
+                padding-right: 2.5em;
+                box-shadow: 0 0 0 0.125em rgba(110, 167, 231, 0.25);
+                align-items: center;
+                border-radius: 4px;
+                display: inline-flex;
+                font-size: 1rem;
+                outline: none;
+                height: 2.5em;
+                justify-content: flex-start;
+                line-height: 1.5;
+                padding-bottom: calc(0.5em - 1px);
+                padding-left: calc(0.75em - 1px);
+                padding-top: calc(0.5em - 1px);
+                position: relative;
+                vertical-align: top;
+            }
+
+            span.has-text-info {
+                display: none;
+            }
+
+
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
+
+    .card-basic-place {
+        width: 50%;
+        min-height: 300px;
+        padding: 30px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        &.action {
+            justify-content: space-between;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        &.cancelled, &.error-card {
+            gap: 20px;
+
+            i {
+                font-size: 100px !important;
+                justify-content: center;
+            }
+        }
+    }
+}

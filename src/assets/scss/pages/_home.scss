@@ -1,0 +1,238 @@
+$primary-color: #03989E;
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.home-first-container {
+    width: 100%;
+    height: 520px;
+    margin-top: -111px;
+    background-repeat: round;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        position: absolute;
+        top: 3%;
+        color: #FFF;
+
+
+        .carousel-pause {
+            display: none;
+        }
+
+        .carousel .carousel-indicator.is-inside.is-bottom {
+            bottom: 0;
+            display: none;
+        }
+
+        h1.title-slide {
+            font-size: 5rem;
+            margin-top: -20px;
+        }
+
+        p.content-slide {
+            margin-bottom: 35px;
+        }
+
+        a.button-slide {
+            border-radius: 10px;
+            background-image: linear-gradient(165deg, #478ac9, #08a55c);
+            margin: 40px auto 60px 0;
+            padding: 8px 16px 10px;
+            color: white;
+        }
+    }
+}
+
+.main-content {
+
+    margin-top: 40px;
+
+    h1.title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 1.1;
+        color: #82C0C6;
+    }
+
+    h2.home-content-subtitle {
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .cards-places {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+        margin: 70px auto -80px auto;
+
+        .columns {
+            gap: 40px
+        }
+
+        .card {
+            width: 180px;
+            height: 250px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: none;
+            padding-top: 15px;
+            text-align: center;
+
+            img.icon-place {
+                max-width: 28%;
+            }
+
+            p.card-place-text {
+                line-height: 36px;
+                margin-top: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .places-container {
+        width: 99%;
+        // height: 500px;
+        margin-top: 50px;
+        margin: 70px auto 0 auto;
+
+        p.places-title {
+            font-size: 35px;
+            color: #34455d;
+            font-weight: 800;
+        }
+
+        .carousel-list {
+            padding-left: 45px;
+
+            .carousel-arrow .icon {
+                background-color: transparent;
+                border: none !important;
+                color: #238cd7;
+            }
+
+            .carousel-slides {
+                .carousel-slide {
+                    width: 300px !important;
+                }
+            }
+        }
+
+        .carousel-list.has-shadow {
+            box-shadow: none;
+        }
+
+        .place {
+            width: 222px;
+        }
+
+        .place a,
+        .place a .card {
+            width: 250px;
+            height: 320px;
+            padding: 9px;
+
+            .card-body {
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .name {
+                    font-weight: 700;
+                }
+
+                .footer-card {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span:not(.checked) {
+                        color: lightgray;
+                    }
+
+                    .checked {
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-first-container {
+        .slider {
+            h1.title-slide {
+                font-size: calc(2rem + 10%);
+                margin-top: -20px;
+            }
+        }
+
+    }
+}
+
+.places-information {
+    .columns {
+        gap: 60px;
+
+        .column {
+            .info {
+
+                background-color: transparent !important;
+
+                .title {
+                    h2 {
+                        color: #34455D;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .content.container {
+        text-align: justify;
+        line-height: 2.5;
+    }
+}
+
+
+.title-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .border-line {
+        border-bottom: 1px solid lightgrey;
+        width: 100%;
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .places-information.container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards-places .columns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .places-slider {
+        margin-top: 75px;
+    }
+}

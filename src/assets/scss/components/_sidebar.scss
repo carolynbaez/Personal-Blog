@@ -1,0 +1,13 @@
+.b-sidebar .sidebar-content.is-fullheight{
+    background-color: white;
+}
+
+.menu-list{
+    a.is-active{
+        background-color: rgb(30, 196, 182) !important;
+    }
+
+    a:hover{
+        background-color: rgba(235, 235, 235, 0.658);
+    }
+}

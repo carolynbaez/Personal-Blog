@@ -1,0 +1,86 @@
+.modal .animation-content {
+    width: 80%;
+
+    .b-steps {
+        width: 100%;
+
+        nav.step-navigation {
+            display: none;
+        }
+
+        .step-items .step-item {
+
+            .step-marker {
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+        .step-content{
+            .trans-container {
+                display: flex;
+                justify-content: space-between;
+
+                .transport-columns {
+                    width: 100%;
+
+                .trans-form{
+                    width: 80%;
+                }
+                
+
+                .trans-list {
+                    margin-top: 30px;
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 17px;
+
+                        box-shadow: 0 0.5em 1em -1.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+                    }
+
+                    p.tr-name {
+                        font-size: 26px;
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 8px;
+                        margin: 0;
+                        font-weight: 600;
+                        color: #002646;
+                        padding: 10px 0 7px 10px;
+                    }
+
+                    .transportation-info {
+                        font-size: 10px;
+                        margin-left: 43px;
+                        margin-top: -4px;
+                        color: gray;
+                        font-weight: lighter;
+                        text-align: justify;
+                    }
+
+                    .actions{
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+.category-select, .select-form{
+    box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.5em;
+    border-radius: 4px;
+    color: #363636;
+    outline: none;
+    border-color: #dbdbdb;
+}
+
